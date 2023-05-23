@@ -1,0 +1,102 @@
+# Reading C:/modeltech_6.5/tcl/vsim/pref.tcl 
+# //  ModelSim SE 6.5 Jan 22 2009 
+# //
+# //  Copyright 1991-2009 Mentor Graphics Corporation
+# //              All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND 
+# //  PROPRIETARY INFORMATION WHICH IS THE PROPERTY
+# //  OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
+# //  AND IS SUBJECT TO LICENSE TERMS.
+# //
+# OpenFile {E:/SELVA/2017-18/projects/PA college/approx_mul/code/phase1/modelsim1/approx_multiplier.mpf} 
+# Loading project approx_multiplier
+# Compile of approx_comp.v was successful.
+# Compile of approx_fa.v was successful.
+# Compile of approx_ha.v was successful.
+# Compile of final.v was successful.
+# Compile of or.v was successful.
+# Compile of or_3.v was successful.
+# Compile of or_4.v was successful.
+# Compile of wall_mul.v was successful.
+# Compile of ppgen_loop.v was successful.
+# 9 compiles, 0 failed with no errors. 
+vsim work.final
+# vsim work.final 
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.final(fast)
+add wave -r /*
+force -freeze sim:/final/clk 1 0, 0 {50 ns} -r 100
+force -freeze sim:/final/rst 1 0
+force -freeze sim:/final/multiplicand 10101010 0
+force -freeze sim:/final/multiplier 10101010 0
+run
+run
+run
+run
+run
+force -freeze sim:/final/rst 0 0
+run
+run
+run
+run
+run
+force -freeze sim:/final/multiplicand 10111010 0
+force -freeze sim:/final/multiplier 11101010 0
+run
+run
+run
+run
+run
+force -freeze sim:/final/multiplicand 10111011 0
+run
+run
+run
+run
+run
+# Compile of approx_comp.v was successful.
+# Compile of approx_fa.v was successful.
+# Compile of approx_ha.v was successful.
+# Compile of final.v was successful.
+# Compile of or.v was successful.
+# Compile of or_3.v was successful.
+# Compile of or_4.v was successful.
+# Compile of wall_mul.v was successful.
+# Compile of ppgen_loop.v was successful.
+# 9 compiles, 0 failed with no errors. 
+vsim work.final
+# vsim work.final 
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.final(fast)
+add wave -r /*
+force -freeze sim:/final/clk 1 0, 0 {50 ns} -r 100
+force -freeze sim:/final/rst 1 0
+force -freeze sim:/final/multiplicand 10101010 0
+force -freeze sim:/final/multiplier 10101010 0
+run
+run
+run
+run
+run
+force -freeze sim:/final/rst 0 0
+run
+run
+run
+run
+run
+force -freeze sim:/final/multiplicand 10101011 0
+run
+run
+run
+run
+run
+# Compile of approx_comp.v was successful.
+# Compile of approx_fa.v was successful.
+# Compile of approx_ha.v was successful.
+# Compile of final.v was successful.
+# Compile of or.v was successful.
+# Compile of or_3.v was successful.
+# Compile of or_4.v was successful.
+# Compile of wall_mul.v was successful.
+# Compile of ppgen_loop.v was successful.
+# 9 compiles, 0 failed with no errors. 
