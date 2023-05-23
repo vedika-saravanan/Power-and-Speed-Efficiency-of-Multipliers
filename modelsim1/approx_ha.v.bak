@@ -1,0 +1,8 @@
+module approx_ha ( input x1, x2, output reg sum, carry );
+  
+  always @ (x1 or x2)
+    begin
+      sum   = x1 | x2 ; //sum calculation
+      carry = x1 & x2 ; //carry calculation
+    end
+endmodule
